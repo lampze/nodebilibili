@@ -27,6 +27,7 @@ live.on("live", () => {
         danmu = data.info[1];
         console.log(`${userName}: ${danmu}`);
         notifier.notify({
+          "app-name": "nodebilibili",
           title: "弹幕",
           message: `${userName}: ${danmu}`,
         });
@@ -39,6 +40,7 @@ live.on("live", () => {
         let prtStr = `${userName} ${userAction} ${giftNum} 个 ${giftName}`;
         console.log(prtStr);
         notifier.notify({
+          "app-name": "nodebilibili",
           title: "礼物",
           message: prtStr,
         });
